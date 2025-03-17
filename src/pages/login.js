@@ -1,6 +1,6 @@
 import React from "react";
 import imageLogin from "../context/image_login.jpg";
-import { FaUser, FaLock } from "react-icons/fa";
+import { FaUser, FaLock, FaCamera } from "react-icons/fa";
 
 export const LoginScreen = () => {
     return (
@@ -43,6 +43,10 @@ export const LoginScreen = () => {
                     </div>
 
                     <button type="submit" style={styles.loginButton}>I N G R E S A R</button>
+
+                    <button type="button" style={styles.cameraButton}>
+                        <FaCamera style={styles.cameraIcon} />
+                    </button>
                 </form>
             </div>
         </div>
@@ -129,7 +133,24 @@ const styles = {
         borderRadius: '15px',
         cursor: 'pointer',
         transition: 'background-color 0.3s ease',
-        with: '100%'
+        width: '100%'
+    },
+    cameraButton: {
+        width: '50px', 
+        height: '50px', 
+        borderRadius: '10px', 
+        backgroundColor: '#2c89db', 
+        border: 'none',
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: '0 auto',
+        marginTop: '20px',        
+    },
+    cameraIcon: {
+        color: 'white', 
+        fontSize: '20px', 
     },
 };
 
