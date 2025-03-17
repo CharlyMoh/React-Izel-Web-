@@ -1,6 +1,6 @@
 import React from "react";
 import imageLogin from "../context/image_login.jpg";
-import {FaUser, FaLock} from "react-icons/fa"
+import { FaUser, FaLock } from "react-icons/fa";
 
 export const LoginScreen = () => {
     return (
@@ -9,8 +9,10 @@ export const LoginScreen = () => {
                 <h2 style={styles.title}>BIENVENIDO</h2>
                 <form style={styles.form}>
                     <div style={styles.inputGroup}>
-                            <FaUser></FaUser>
-                        <input 
+                        <div style={styles.icon}>
+                            <FaUser />
+                        </div>
+                        <input
                             type="text"
                             id="email"
                             placeholder="Ingrese su correo"
@@ -19,7 +21,9 @@ export const LoginScreen = () => {
                     </div>
 
                     <div style={styles.inputGroup}>
-                        <FaLock></FaLock>
+                        <div style={styles.icon}>
+                            <FaLock />
+                        </div>
                         <input
                             type="password"
                             id="password"
@@ -30,7 +34,9 @@ export const LoginScreen = () => {
 
                     <div style={styles.options}>
                         <div style={styles.rememberMe}>
-                            <input type="checkbox" id="rememberMe" />
+                            <input 
+                                type="checkbox" 
+                                id="rememberMe" />
                             <label htmlFor="rememberMe" style={styles.rememberMeLabel}>Recuerdame</label>
                         </div>
                         <a href="#forgot-password" style={styles.forgotPassword}>¿Olvidaste tu contraseña?</a>
@@ -38,9 +44,6 @@ export const LoginScreen = () => {
 
                     <button type="submit" style={styles.loginButton}>I N G R E S A R</button>
                 </form>
-                {/* <div style={styles.register}>
-                    <p>No tienes una cuenta? <a href="#register" style={styles.registerLink}>Register</a></p>
-                </div> */}
             </div>
         </div>
     );
@@ -55,50 +58,53 @@ const styles = {
         backgroundImage: `url(${imageLogin})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        fontFamily: 'Helvetica'
+        fontFamily: 'Helvetica',
+        padding: '20px'
     },
     loginBox: {
-        backgroundColor: 'rgba(255, 255, 255, 0.8)', 
+        backgroundColor: 'rgba(255, 255, 255, 0.8)',
         padding: '40px',
         borderRadius: '10px',
         boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
-        width: '350px',
         textAlign: 'center',
+        width: '100%',
+        maxWidth: '350px'
     },
     title: {
-        marginBottom: '20px',
+        marginBottom: '40px',
         fontSize: '26px',
         color: '#333',
-        marginBottom: '40px'
     },
     form: {
         display: 'flex',
         flexDirection: 'column',
     },
     inputGroup: {
+        display: 'flex',
+        alignItems: 'center',
         marginBottom: '15px',
-        textAlign: 'left',
-    },
-    label: {
-        marginBottom: '5px',
-        fontSize: '14px',
-        color: '#555',
+        border: '1px solid #000000',
+        borderRadius: '5px',
+        padding: '5px',
     },
     icon: {
-        marginright: '10px'
+        margin: '0 10px',
+        color: '#555',
     },
     input: {
+        flex: 1,
         padding: '10px',
         fontSize: '14px',
-        width: '100%',
-        borderRadius: '5px',
-        border: '1px solid #ccc',
+        border: 'none',
+        outline: 'none',
+        background: 'transparent',
     },
     options: {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
         marginBottom: '20px',
+        flexDirection: 'row'
     },
     rememberMe: {
         display: 'flex',
@@ -123,15 +129,7 @@ const styles = {
         borderRadius: '15px',
         cursor: 'pointer',
         transition: 'background-color 0.3s ease',
-    },
-    register: {
-        marginTop: '20px',
-        fontSize: '14px',
-        color: '#555',
-    },
-    registerLink: {
-        color: '#2c89db',
-        textDecoration: 'none',
+        with: '100%'
     },
 };
 
