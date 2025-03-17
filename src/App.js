@@ -1,13 +1,13 @@
 // Importaciones
-import { LoginScreen } from "./pages/login";
-import {Dashboard} from "./pages/controlPanelScreen"
+import { ControlPanelScreen, InscriptionScreen, LoginScreen } from './pages';
+
 
 // Pantalla principal
 
 function App() {
   return (
     <div className="">
-      <Dashboard/>
+      <InscriptionScreen/>
     </div>
   );
 }

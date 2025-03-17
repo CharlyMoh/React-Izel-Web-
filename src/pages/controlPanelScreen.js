@@ -2,7 +2,7 @@ import React from "react";
 import { FaHome, FaUser, FaChartLine, FaCog, FaSignOutAlt } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 
-export const Dashboard = () => {
+export const ControlPanelScreen = () => {
     return (
         <div style={styles.container}>
             {/* Barra de tareas lateral */}
@@ -132,5 +132,3 @@ const styles = {
         color: '#555',
     },
 };
-
-export default Dashboard;

@@ -1,2 +1,4 @@
-export * from './controlPanelScreen'
-export * from './login'
+// src/screens/index.js
+export * from './ControlPanelScreen';
+export * from './InscriptionScreen';
+export * from './LoginScreen';

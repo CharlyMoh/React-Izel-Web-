@@ -153,5 +153,3 @@ const styles = {
         fontSize: '20px', 
     },
 };
-
-export default LoginScreen;
