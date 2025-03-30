@@ -5,7 +5,7 @@ export const InscriptionScreen = () => {
     return (
         <div style={styles.container}>
             <div style={styles.uploadBox}>
-                <h2 style={styles.title}>Suba sus archivos en formato .PDF</h2>
+                <h2 style={styles.title}>Suba sus archivos</h2>
                 <form style={styles.form}>
                     <div style={styles.section}>
                         <label style={styles.label}>
