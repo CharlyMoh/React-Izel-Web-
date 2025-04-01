@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHome, FaUser, FaChartLine, FaCog, FaSignOutAlt } from "react-icons/fa";
+import { FaUser, FaCog, FaSignOutAlt } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 
 export const ControlPanelScreen = () => {
@@ -21,7 +21,15 @@ export const ControlPanelScreen = () => {
                     </li>
                     <li style={styles.menuItem}>
                         <CgFileDocument style={styles.menuIcon}/>
-                        <span style={styles.menuText}>Reinscripción</span>
+                        <span style={styles.menuText}>Asistencias</span>
+                    </li>
+                    <li style={styles.menuItem}>
+                        <CgFileDocument style={styles.menuIcon}/>
+                        <span style={styles.menuText}>Inscripción / Reinscripción</span>
+                    </li>
+                    <li style={styles.menuItem}>
+                        <CgFileDocument style={styles.menuIcon}/>
+                        <span style={styles.menuText}>Generar Credencial</span>
                     </li>
                     <li style={styles.menuItem}>
                         <FaCog style={styles.menuIcon} />

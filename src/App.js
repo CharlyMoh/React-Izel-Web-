@@ -1,5 +1,5 @@
 // Importaciones
-import { ControlPanelScreen, InscriptionScreen, LoginScreen } from './pages';
+import { ControlPanelScreen, InscriptionScreen, LoginScreen, QRScannerModal, StudentInfoForm } from './pages';
 
 
 // Pantalla principal
@@ -7,7 +7,7 @@ import { ControlPanelScreen, InscriptionScreen, LoginScreen } from './pages';
 function App() {
   return (
     <div className="">
-      <InscriptionScreen/>
+      <StudentInfoForm/>
     </div>
   );
 }

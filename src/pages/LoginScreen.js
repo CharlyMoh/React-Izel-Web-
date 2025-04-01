@@ -44,9 +44,9 @@ export const LoginScreen = () => {
 
                     <button type="submit" style={styles.loginButton}>I N G R E S A R</button>
 
-                    <button type="button" style={styles.cameraButton}>
+                    {/* <button type="button" style={styles.cameraButton}>
                         <FaCamera style={styles.cameraIcon} />
-                    </button>
+                    </button> */}
                 </form>
             </div>
         </div>
